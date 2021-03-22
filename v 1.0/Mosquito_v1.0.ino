@@ -56,9 +56,11 @@ void loop() {
     Dimmer = level_light;
   }
 
-    if (hhh > 8 || hhh < 19 ) {
+    if (hhh > 8 ) {
+      if(hhh < 19){
     Dimmer = 0;
   }
+    }
 
   if (hhh == 19 && mmm > 1) {
     level_light = (mmm * 60 + sss);
